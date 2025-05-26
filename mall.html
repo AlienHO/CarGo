@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarGo - Vehicle Mall</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .aspect-4-3 {
+      aspect-ratio: 4 / 3;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-800 flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-green-100 shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold text-green-800">CarGo</div>
+      <div class="flex-1 mx-4">
+        <input type="text" placeholder="Search for vehicles..." class="w-full px-4 py-2 rounded-full border border-green-300 focus:ring-2 focus:ring-green-400">
+      </div>
+      <div class="space-x-4 flex items-center">
+        <a href="#" class="text-sm text-green-700">EN / 中文</a>
+        <a href="#" class="text-sm text-green-700">Login</a>
+        <a href="#" class="text-sm text-green-700">Register</a>
+        <a href="#" class="text-green-700"><i class="far fa-heart"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-24 max-w-7xl mx-auto px-4 flex-grow">
+    <!-- Filters -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-green-900">Filter Vehicles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <select class="p-3 rounded-lg border border-green-300">
+          <option>Energy Type</option>
+          <option>Gasoline</option>
+          <option>Electric</option>
+          <option>Hybrid</option>
+        </select>
+        <select class="p-3 rounded-lg border border-green-300">
+          <option>Vehicle Type</option>
+          <option>SUV</option>
+          <option>Sedan</option>
+          <option>Truck</option>
+        </select>
+        <select class="p-3 rounded-lg border border-green-300">
+          <option>Brand</option>
+          <option>BYD</option>
+          <option>Geely</option>
+          <option>Great Wall</option>
+        </select>
+        <button class="bg-green-600 text-white px-4 py-3 rounded-lg">Apply Filters</button>
+      </div>
+    </section>
+
+    <!-- Vehicle Cards -->
+    <section>
+      <h2 class="text-2xl font-bold mb-6 text-green-900">Available Cars</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Example of available card -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <div class="relative aspect-4-3 overflow-hidden rounded-xl mb-4">
+            <img src="https://i.pinimg.com/736x/14/ad/61/14ad61cde436ca462d25e3e70fb8e629.jpg" alt="Car" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-lg font-semibold">BYD Han EV</h3>
+          <p class="text-green-700 text-xl font-bold">$19,500</p>
+          <a href="car-details.html" class="text-green-600 text-sm underline">View Details</a>
+        </div>
+
+        <!-- Example of sold out card -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <div class="relative aspect-4-3 overflow-hidden rounded-xl mb-4">
+            <img src="https://i.pinimg.com/736x/1e/3e/28/1e3e28daf85ca25c1906cb5cb04e2b1c.jpg" alt="Car" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+              <span class="text-red-500 font-bold text-lg uppercase">Sold Out</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-semibold">Great Wall Wingle</h3>
+          <p class="text-red-600 text-xl font-bold">Sold Out</p>
+          <span class="text-gray-500 text-sm">Not Available</span>
+        </div>
+
+        <!-- Repeat to fill 12 cards -->
+        <!-- Example card with overlay control can be duplicated as needed -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <div class="relative aspect-4-3 overflow-hidden rounded-xl mb-4">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" alt="Car" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-lg font-semibold">Geely Icon</h3>
+          <p class="text-green-700 text-xl font-bold">$10,800</p>
+          <a href="car-details.html" class="text-green-600 text-sm underline">View Details</a>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="mt-8 flex justify-center space-x-2">
+        <button class="px-4 py-2 bg-green-700 text-white rounded">1</button>
+        <button class="px-4 py-2 bg-green-200 rounded">2</button>
+        <button class="px-4 py-2 bg-green-200 rounded">3</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
+      <div>
+        <h4 class="text-xl font-bold">CarGo</h4>
+        <p class="text-sm mt-2">Trusted used car export from China</p>
+        <div class="mt-4 space-x-3">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+      <div>
+        <h5 class="font-bold">Quick Links</h5>
+        <ul class="space-y-1 text-sm mt-2">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Shop</a></li>
+          <li><a href="#" class="hover:underline">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold">Newsletter</h5>
+        <input type="email" placeholder="Your email" class="px-3 py-1 rounded text-black w-48">
+        <button class="mt-2 px-3 py-1 bg-green-700 rounded">Subscribe</button>
+      </div>
+    </div>
+    <p class="text-xs text-center mt-6">&copy; 2025 CarGo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
