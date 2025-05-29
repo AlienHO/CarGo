@@ -3,6 +3,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Version](https://img.shields.io/badge/Version-2.1.0-brightgreen?style=for-the-badge)](https://github.com/yourusername/cargo)
 
 > 🚗 专业的中国二手车出口在线平台，采用现代化TypeScript + React技术栈构建
 
@@ -16,8 +17,10 @@ CarGo 是一个专注于中国二手车出口业务的综合性在线平台。�
 - 📱 **响应式设计** - 完美适配桌面、平板和移动设备
 - 🛒 **一站式服务** - 从浏览到购买的完整流程
 - ⚡ **高性能** - TypeScript + React18 带来极致用户体验
-- 🎨 **现代UI** - Tailwind CSS 打造的美观界面
+- 🎨 **现代UI** - Tailwind CSS 打造的美观界面与交互效果
 - 🔐 **类型安全** - TypeScript 提供编译时类型检查
+- ✨ **高级交互** - 动态图片幻灯片、悬浮元素和响应式导航
+- 💵 **醒目定价** - 绿色加粗的价格标签提高转化率
 
 ## 🛠 技术栈
 
